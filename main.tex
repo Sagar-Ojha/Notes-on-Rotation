@@ -1,0 +1,50 @@
+\documentclass{article}
+
+% Packages
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{graphicx}
+\usepackage{overpic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tikz}
+
+% Setups
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+
+% New commands
+\newcommand{\T}{\mathsf{T}}
+\renewcommand{\Re}{\mathbb{R}}
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\col}[1]{C({#1})}
+\newcommand{\row}[1]{R({#1})}
+\newcommand{\nul}[1]{N({#1})}
+\newcommand{\rng}[1]{{#1_{\text{range}}}}
+\newcommand{\co}[1]{{#1_{\text{co-domain}}}}
+\newcommand{\ldash}{\text{ ------ }}
+\newcommand{\gap}{\:\:\:\:\:\:\:\:}
+
+% Graphics path
+\graphicspath{{./Figures/}}
+
+% Begin
+\title{Notes on Rotation}
+\author{as03050 }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\include{quaternion}
+
+\end{document}
