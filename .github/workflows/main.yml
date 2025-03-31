@@ -24,7 +24,6 @@ name: Compile LaTeX PDF
          pdflatex -interaction=nonstopmode main.tex || exit 1  # Compile twice for proper references
  
      - name: Upload PDF as artifact
-       uses: actions/upload-artifact@v3
        uses: actions/upload-artifact@v4
        with:
          name: compiled-pdf
